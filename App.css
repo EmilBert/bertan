@@ -1,0 +1,235 @@
+.App{
+  margin:0;
+}
+
+.bg{
+  margin-top:70px;
+  width:835px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+.bg-mid{
+  background: #f8d37f;
+  width:300px;
+  height: 480px;
+  top: 200px;
+}
+.bg-before{
+  border-right: 140px solid #f8d37f;
+  border-top: 240px solid transparent;
+  border-bottom: 240px solid transparent;
+}
+
+.bg-after{
+ 
+  border-left: 140px solid #f8d37f;
+  border-top: 240px solid transparent;
+  border-bottom: 240px solid transparent;
+}
+
+
+.Game{
+  display:block;
+}
+
+
+body {
+  background: #88C9F2;
+}
+
+
+
+.row:nth-child(even) {
+  margin-left: 52px;
+}
+.row:after {
+  position: relative;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.hex {
+  width: 100px;
+  height: 50px;
+  position: relative;
+  float: left;
+  background: #ff6600;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+.hex:before {
+  position: relative;
+  content: "";
+  position: absolute;
+  border-bottom: 30px solid #ff6600;
+  border-right: 50px solid transparent;
+  border-left: 50px solid transparent;
+  top: -30px;
+  transition: all 0.3s ease;
+  z-index: -1;
+  
+}
+.hex:after {
+  content: "";
+  position: absolute;
+  border-top: 30px solid #ff6600;
+  border-right: 50px solid transparent;
+  border-left: 50px solid transparent;
+  bottom: -30px;
+  transition: all 0.3s ease;
+  z-index: -1;
+  
+}
+/*
+.hex:hover {
+  background: #993d00;
+}
+.hex:hover:before {
+  border-bottom: 30px solid #993d00;
+}
+.hex:hover:after {
+  border-top: 30px solid #993d00;
+}
+*/
+
+.hex.none{
+  background: transparent;
+}
+.hex.none:after{
+  border-top: 30px solid transparent;
+}
+.hex.none:before{
+  border-bottom: 30px solid transparent;
+}
+
+.hex-container{
+  display: block;
+}
+
+.hex-container p{
+  font-size: 20px;
+  color:white;
+  margin:-5px 0 0 0;
+  z-index: 2;
+  text-align: center;
+  transform: 0;
+}
+
+svg {
+  margin-top:-10px;
+  width:45px;
+  height:45px;
+}
+
+.hex.water{
+  background: #88C9F2;
+  
+}
+.hex.water:before {
+  border-bottom: 30px solid #88C9F2;
+}
+.hex.water:after {
+  border-top: 30px solid #88C9F2;
+}
+
+
+
+/*SHEEP*/
+.hex.sheep {
+  background: #9AC943;
+}
+.hex.sheep:before {
+  border-bottom: 30px solid #9AC943;
+}
+.hex.sheep:after {
+  border-top: 30px solid #9AC943;
+}
+
+.sheep-icon{
+  color: #66852c;
+}
+
+/*BRICK*/
+.hex.brick {
+  background: #D96B2B;
+}
+.hex.brick:before {
+  border-bottom: 30px solid  #D96B2B;
+}
+.hex.brick:after {
+  border-top: 30px solid #D96B2B;
+}
+
+.brick-icon{
+  color: #6e3717;
+}
+
+/*ROCK*/
+.hex.rock {
+  background: #8F8B84;
+}
+.hex.rock:before {
+  border-bottom: 30px solid #8F8B84;
+}
+.hex.rock:after {
+  border-top: 30px solid #8F8B84;
+}
+
+.rock-icon{
+  color: #38332a;
+  margin-bottom:4px;
+}
+
+/*WHEAT*/
+.hex.wheat {
+  background: #F2B705;
+}
+.hex.wheat:before {
+  border-bottom: 30px solid #F2B705;
+}
+.hex.wheat:after {
+  border-top: 30px solid #F2B705;
+}
+
+.wheat-icon{
+  color: #906e06;
+}
+
+/*WOOD*/
+.hex.wood {
+  background: #027333;
+}
+.hex.wood:before {
+  border-bottom: 30px solid #027333;
+}
+.hex.wood:after {
+  border-top: 30px solid #027333;
+}
+
+.wood-icon{
+  color: #023518;
+}
+
+/*DESERT*/
+.hex.desert {
+  background: wheat;
+}
+.hex.desert:before {
+  border-bottom: 30px solid wheat;
+}
+.hex.desert:after {
+  border-top: 30px solid wheat;
+}
+
+.desert-icon{
+  color: green;
+  margin-bottom:4px;
+}
